@@ -50,6 +50,8 @@ class SchoolTest < Minitest::Test
     school.add_student_name('Aurora')
     school.add_student_name('tim')
     school.add_student_name('megan')
+    require "pry"
+    binding.pry
     assert_equal ["Aurora", "Tim", "Megan"], school.standard_student_names
   end
 
